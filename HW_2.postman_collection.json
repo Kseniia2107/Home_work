@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "40d2e055-031d-4374-92f4-b2f2729039d9",
+		"name": "HW_2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"// Статус код 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Проверить, что в body приходит правильный string.\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"This is the first responce from server!ss\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5007/first",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5007",
+					"path": [
+						"first"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"// Статус код 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Спарсить response body в json.\r",
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"// Проверить, что name в ответе равно name s request \r",
+							"pm.test(\"Name\", function () {\r",
+							"    pm.expect(jsonData.name).to.eql(\"Kseniia\");\r",
+							"});\r",
+							"\r",
+							"// Проверить, что age в ответе равно age s request\r",
+							"pm.test(\"Age\", function () {\r",
+							"    pm.expect(+jsonData.age).to.eql(31);\r",
+							"});\r",
+							"\r",
+							"// Проверить, что salary в ответе равно salary s request\r",
+							"pm.test(\"Salary\", function () {\r",
+							"    pm.expect(+jsonData.salary).to.eql(500);\r",
+							"});\r",
+							"\r",
+							"// Спарсить request.\r",
+							"// let req = pm.request.url.query.toObject ();\r",
+							"// let req = JSON.parse(request.body);\r",
+							"let req = pm.request.body.formdata.toObject()\r",
+							"// Проверить, что name в ответе равно name s request (name забрать из request.)\r",
+							"pm.test(\"Name_req\", function () {\r",
+							"pm.expect(req.name).to.eql(jsonData.name);\r",
+							"});\r",
+							"\r",
+							"// Проверить, что age в ответе равно age s request (age забрать из request.)\r",
+							"\r",
+							"pm.test(\"Age_req\", function () {\r",
+							"pm.expect(req.age).to.eql(jsonData.age);\r",
+							"});\r",
+							"\r",
+							"// Проверить, что salary в ответе равно salary s request (salary забрать из request.)\r",
+							"\r",
+							"pm.test(\"Salary_req\", function () {\r",
+							"pm.expect(+req.salary).to.eql(jsonData.salary);\r",
+							"});\r",
+							"\r",
+							"// Вывести в консоль параметр family из response.\r",
+							"let fam = jsonData.family\r",
+							"console.log(fam)\r",
+							"\r",
+							"// Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)\r",
+							"let salary_15 = jsonData.family.u_salary_1_5_year\r",
+							"let salary_4 = jsonData.salary*4\r",
+							"\r",
+							"pm.test(\"salary_check\", function () {\r",
+							"    pm.expect(salary_15).to.eql(salary_4);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Kseniia",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "31",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5007/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5007",
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

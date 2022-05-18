@@ -1,0 +1,139 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON - create a repository in git bush
+ 5. Клонировать репозиторий JSON на локальный компьютер - git clone https://github.com/Kseniia2107/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”. - cd JSON and vim new.json
+ 7. Добавить файл под гит. - git add new.json
+ 8. Закоммитить файл. - git commit -m "create new.json"
+ 9. Отправить файл на внешний GitHub репозиторий. - git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON. - vim new.json - 
+{ 
+           "name":"Iliiasova Kseniia",
+            "age":"31",
+            "pets":"0",
+            "salary":"500$"
+}
+ 11. Отправить изменения на внешний репозиторий. - git commit -am "add modify new.json"
+ - git push
+ 12. Создать файл preferences.json - vim preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON. - {                
+        "Favorite_movie":"Dnevnik pamyati",
+        "Favorite_series":"Most",
+        "Favorite_food":"Fish",
+        "Favorite_season":"Spring",
+        "Country":"Spain"
+
+}
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+{
+  "Git_bash":"learning commands: ls,mkdir, rm, mv,cp,less,cat,grep,find,curl",
+        "JS":"let, typeof, if and ?, while and for || and &&, functions, arrow functions",
+        "Postman":"learning the basics of Postman",
+        "Git_hub":"git clone, start. ,git add,git commit -m(-am),git push,git pull,vim,git fetch"
+
+}
+ 15. Отправить сразу 2 файла на внешний репозиторий. - git add . - git commit -m "add preferences.json and skills.json" - git push
+ 16. На веб интерфейсе создать файл bug_report.json.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+
+
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий JSON - git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML. - create a repository in git bush
+ 22. Клонировать репозиторий XML на локальный компьютер. - git clone https://github.com/Kseniia2107/XML.git
+ 23. Внутри локального XML создать файл “new.xml”. -  cd XML - vim new.xml
+ 24. Добавить файл под гит. -  git add new.xml
+ 25. Закоммитить файл. - git commit -m "create new.json"
+ 26. Отправить файл на внешний GitHub репозиторий. -  git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+vim new.xml
+
+<name>"Iliiasova Kseniia"</name>
+    <age>"31"</age>
+    <pets>"0"</pets>
+    <salary>"500$"</salary>
+
+ 28. Отправить изменения на внешний репозиторий. - git commit -am "add modify new.xml" - git push
+ 29. Создать файл preferences.xml - vim preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML. 
+
+       <Favorite_movie>"Dnevnik pamyati"</Favorite_movie>
+        <Favorite_series>"Most"</Favorite_series>
+        <Favorite_food>"Plov"</Favorite_food>
+        <Favorite_season>"Spring"</Favorite_saeson>
+        <Country>"Spain"</Country>
+
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML - vim skills.xmlg
+
+<Git_bash> "learning commands: ls,mkdir, rm, mv,cp,less,cat,grep,find,curl"</Git_bash>
+        <JS>"let, typeof, if and ?, while and for || and &&, functions, arrow functions"</JS>
+        <Postman>"learning the basics of Postman"</Postman>
+        <Git_hub>"git clone, start. ,git add,git commit -m(-am),git push,git pull,vim,git fetch"</Git_hub>
+
+ 32. Сделать коммит в одну строку. - git add .  git commit -m "add preferences.xml"  or git commit - am "add preferences.xml and skills.xml"
+ 33. Отправить сразу 2 файла на внешний репозиторий. - git push
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<Title>Login Page</Title>
+<Summery>"The button "Sign in" is displaced after clicking on the page"</Summery>
+<STR>"1)Open the login page,
+  2)navigate to the "Sign in"button,
+  3)click on the page on any page"</STR>
+<Result>"The button "Sign in" is displaced after clicking on the page"</Result>
+<Expected_result>"The button "Sign in" is located on the page according to mockups"</Expected_result>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML - git pull
+
+:
+TXT
+ 1. Создать внешний репозиторий c названием TXT. - create a repository in git bush
+ 2. Клонировать репозиторий TXT на локальный компьютер. - git clone https://github.com/Kseniia2107/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”. - vim new.txt
+ 4. Добавить файл под гит. - git add new.txt
+ 5. Закоммитить файл. - git commit -m "create new.txt"
+ 6. Отправить файл на внешний GitHub репозиторий.- git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT. - vim new.txt
+
+   1) name - Iliiasova Kseniia
+     2) age - 31
+     3) pets - 0
+     4) salary - 500$
+
+ 8. Отправить изменения на внешний репозиторий. - git commit -am "add modify new.txt" - git push
+ 9. Создать файл preferences.txt - vim preferences.txt 
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+       1) Favorite_movie - Dnevnik pamyati
+        2) Favorite_series - Most
+        3) Favorite_food - Fish
+        4) Favorite_season - Spring
+        5) Country - Spain
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT - vim skills.txt
+
+    1) Git_bash - learning commands: ls,mkdir, rm, mv,cp,less,cat,grep,find,curl
+        2) JS - let, typeof, if and ?, while and for || and &&, functions, arrow functions
+        3) Postman - learning the basics of Postman
+        4) Git_hub - git clone, start. ,git add,git commit -m(-am),git push,git pull,vim,git fetch
+
+ 12. Сделать коммит в одну строку.  - git add .  git commit -m "add preferences.txt and skills.txt"  or git commit - am "add preferences.txt and skills.txt"
+ 13. Отправить сразу 2 файла на внешний репозиторий. - git push
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+
+Title:Login Page
+Summery:The button "Sign in" is displaced after clicking on the page
+STR:1)Open the login page,
+    2)navigate to the "Sign in"button,
+    3)click on the page on any page
+Result:The button "Sign in" is displaced after clicking on the page
+Expected_result:The button "Sign in" is located on the page according to mockups
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT - git pull
